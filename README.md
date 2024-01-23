@@ -1,2 +1,5 @@
 # chaiAurReact
-Hitesh chaudhary 
+
+Hitesh chaudhary
+
+React learning from youtube with a new project

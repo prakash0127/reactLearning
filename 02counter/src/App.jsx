@@ -6,6 +6,13 @@ function App() {
   const addValue = () => {
     console.log("clicked", counter);
     setCounter(counter + 1);
+    // want to add more like above line suppose 4 times then what will be the output the out will be same increment of one time i.e 16
+    // why so because fibre use to send the ionstruction in a bunch
+    // if we want to do it line the same for that we need to use prevCounter i.e it will store the previous value and then increment
+    // setCounter((prevCounter) => prevCounter + 1);
+    // setCounter((prevCounter) => prevCounter + 1);
+    // setCounter((prevCounter) => prevCounter + 1);
+    // setCounter((prevCounter) => prevCounter + 1);
   };
 
   const removeValue = () => {

@@ -1,4 +1,5 @@
 function Card({ username, btnText = "visit me" }) {
+  // here directly we passed the Object here and destructured here and no need to pass like props.variable name
   return (
     <div className="relative h-[400px] w-[300px] rounded-md ">
       <img

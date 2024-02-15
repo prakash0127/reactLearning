@@ -34,10 +34,30 @@ function App() {
             >
               Green
             </button>
+            <button
+              onClick={() => setColor("cyan")}
+              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              style={{ backgroundColor: "cyan" }}
+            >
+              Cyan
+            </button>
+            <button
+              onClick={() => setColor("purple")}
+              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              style={{ backgroundColor: "purple" }}
+            >
+              Purple
+            </button>
+            <button
+              onClick={() => setColor("yellow")}
+              className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+              style={{ backgroundColor: "yellow" }}
+            >
+              Yellow
+            </button>
           </div>
         </div>
       </div>
-      <Colorbutton clr="red" />
     </>
   );
 }

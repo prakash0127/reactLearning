@@ -4,6 +4,12 @@ function customRender(reactElement, container) {
   domElement.setAttribute("href", reactElement.props.href);
   domElement.setAttribute("target", reactElement.props.target);
   container.appendChild(domElement);
+
+  //using another way
+  // for (const key in object) {
+  //   if (Object.hasOwnProperty.call(object, key)) {
+  //   }
+  // }
 }
 
 const reactElement = {

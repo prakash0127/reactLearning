@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Colorbutton from "./Colorbutton";
+// import Colorbutton from "./Colorbutton";
 
 import "./App.css";
 

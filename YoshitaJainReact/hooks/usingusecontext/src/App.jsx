@@ -1,24 +1,22 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
+
 import "./App.css";
-import ChildA from "./ChildA";
 import ChildC from "./ChildC";
+import ChildA from "./ChildA";
+
+// need to create two contexts
 
 const data = createContext();
-// 1. here we have craeted context
 const data1 = createContext();
 function App() {
   const name = "Prakash Gupta";
   const gender = "Male";
-  //context API
-  // 1. create context
-  // 2. provider
-  // 3. consumer
+  // want to share with ChildC component
 
   return (
     <>
       <data.Provider value={name}>
         <data1.Provider value={gender}>
-          <h1>Context API </h1>
           <ChildC />
         </data1.Provider>
       </data.Provider>

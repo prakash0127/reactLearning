@@ -6,6 +6,13 @@ function App() {
   const [count, setCount] = useState(10);
   const [data, setData] = useState("Ram-Ram");
 
+  // useEffect hooks we use while using for side effect tasks need to perform
+  // like timmer function(setTimeout) or fetch the data from Api or dom to update directly then we use useEffect
+
+  // and before we were using class component with lifecycle methods that we can use using this hook
+  // componentDidMount, componentDidUpdate, and componentWillUnmount
+
+  // syntax below
   useEffect(() => {
     console.log("Component did count");
   }, [data]);
@@ -15,6 +22,7 @@ function App() {
       return count;
     }
     setCount((prevCount) => prevCount + 1);
+    f;
   }
   function updateData() {
     setData((prevData) => (prevData === "Ram-Ram" ? "Sita-Ram" : "Ram-Ram"));

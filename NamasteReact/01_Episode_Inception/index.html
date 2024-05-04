@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React Learning</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Hello World! above the root</h1>
+    <div id="root">
+      <!-- by normal using HTML -->
+      <h1>Hello World!</h1>
+    </div>
+    <h1>Hello World! below the root</h1>
+    <!-- <script>
+      // By using js 
+      // so creating a elment h1 first
+      const heading = document.createElement("h1");
+      // now adding the text to the h1 tag
+      heading.innerHTML = "Hello World from javascripts";
+      // selecting the id where we want to append it
+      const root = document.getElementById("root");
+      // added to the root id means append the child to the root
+      root.appendChild(heading);
+    </script> -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      // const heading = React.createElement("h1", {}, "Hello World from React");
+
+      // // and it takes three parameters, first one is the element or tag here h1
+      // // second is a Object
+      // // third one will take the text what you want to print
+
+      // // now for we need to append in root so our heading we need to put in root
+      // // for that we need to create the root
+      // // creating a element is from react that is core part
+      // // and for root we need to use reactDOM means to append the element to our document
+      // // so we need a root or we can say a tree to put to our document
+      // // and now we have created a root for our react libarary and inside it we pass
+      // // the place where we want to place our root
+      // // root is the place where all the react code will run, our code will render inside the root
+      // const root = ReactDOM.createRoot(document.getElementById("root"));
+      // // now we need to render and inside we pass the heading
+      // root.render(heading);
+      // // react is doing all this things means appending the heading to div id root
+      // // we can also write our code separately and attached to this index.html file
+    </script>
+    <script src="./App.js"></script>
+  </body>
+</html>

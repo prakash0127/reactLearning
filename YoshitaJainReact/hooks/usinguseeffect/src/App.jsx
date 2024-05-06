@@ -7,7 +7,8 @@ function App() {
   const [data, setData] = useState("Ram-Ram");
 
   // useEffect hooks we use while using for side effect tasks need to perform
-  // like timmer function(setTimeout) or fetch the data from Api or dom to update directly then we use useEffect
+  // like timmer function(setTimeout) or fetch the data from Api
+  // or dom to update directly then we use useEffect
 
   // and before we were using class component with lifecycle methods that we can use using this hook
   // componentDidMount, componentDidUpdate, and componentWillUnmount

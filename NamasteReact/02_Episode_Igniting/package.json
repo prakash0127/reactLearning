@@ -1,0 +1,19 @@
+{
+  "name": "02_episode_igniting",
+  "version": "1.0.0",
+  "description": "this is a namaste react by Akshay saini ",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prakash0127/reactLearning/tree/main/NamasteReact/02_Episode_Igniting"
+  },
+  "keywords": [],
+  "author": "prakash gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

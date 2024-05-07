@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import WebDev from "./WebDev";
 
 import "./App.css";
+import WebDev2 from "./WebDev2";
 
 function App() {
   const [count, setCount] = useState(10);
@@ -15,7 +17,7 @@ function App() {
 
   // syntax below
   useEffect(() => {
-    console.log("Component did count");
+    // console.log("Component did count");
   }, [data]);
   // whenever our application will reload the above will run
   function updateCount() {
@@ -23,18 +25,21 @@ function App() {
       return count;
     }
     setCount((prevCount) => prevCount + 1);
-    f;
   }
   function updateData() {
     setData((prevData) => (prevData === "Ram-Ram" ? "Sita-Ram" : "Ram-Ram"));
   }
+
   return (
     <>
-      <h1> useState hooks lerning </h1>
+      <h1> useState hooks learning </h1>
       <p>Our count is {count}</p>
       <button onClick={updateCount}>Click to update the count</button>
       <h2>{data}</h2>
       <button onClick={updateData}>Update Data</button>
+      <div style={{ marginTop: "30px", border: "2px solid #ffffff" }}>
+        <WebDev2 />
+      </div>
     </>
   );
 }

@@ -16,6 +16,11 @@ function App() {
 
   return (
     <>
+      {/* to passing the data directl to ComponentC 
+      first we wrap to provider using data.provider data1.provider 
+      for both the data 
+    */}
+
       <data.Provider value={name}>
         <data1.Provider value={gender}>
           <h1>Context API </h1>

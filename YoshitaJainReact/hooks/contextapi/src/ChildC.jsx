@@ -10,7 +10,7 @@ function ChildC() {
               {(gender) => {
                 return (
                   <h1>
-                    My name is {name} and gender is {gender}
+                    My name is {name} and Gender is {gender}
                   </h1>
                 );
               }}

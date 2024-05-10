@@ -15,7 +15,10 @@ function App() {
   const gender = "Male";
   const hobby = "Playing Chess";
   // want to share with ChildC component
-
+  // we need to pass like <data.Provider value and agin inside another
+  // because if we pass separately ComponentC will call again by again
+  // and thatvwe dont want it
+  // even we can pass state as well via this
   return (
     <>
       <h1>Hello js and react js developer</h1>

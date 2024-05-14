@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-
+// two lecture in this example list-in-react and list-key
 function App() {
   // rendering of list in react?
   // means we usually use to render the api call and display the data accordingly

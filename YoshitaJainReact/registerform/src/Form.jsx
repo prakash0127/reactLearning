@@ -59,6 +59,7 @@ function Form() {
     else {
       setFlag(true);
       setInputValue({ ...inputValue, email: "", password: "" });
+      // console.log(inputValue);
     }
   }
 

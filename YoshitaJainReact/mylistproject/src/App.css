@@ -1,0 +1,88 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: #b2aba9;
+}
+.app {
+  text-align: center;
+}
+.container {
+  background-color: #323232;
+  color: white;
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 5%;
+  text-align: center;
+  padding: 20px;
+}
+
+input[type="text"],
+select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 15%;
+  background-color: #4caf50;
+  color: #000;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.header {
+  width: 100%;
+  padding: 12px 20px;
+  color: white;
+  font-size: 50px;
+}
+
+.list-heading {
+  color: rgb(15, 14, 14);
+  font-size: 50px;
+  text-align: left;
+  background-color: cadetblue;
+  width: 60%;
+}
+.ui-define {
+  background-color: rgb(243, 240, 243);
+  margin-left: 25%;
+  width: 50%;
+  padding: 20px 30px;
+  margin-top: 5%;
+}
+
+.listData {
+  color: #000;
+  font-size: 20px;
+  background-color: rgb(164, 203, 237);
+  text-align: left;
+  padding-left: 30px;
+  width: 53%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  border-radius: 10px;
+}
+.btn-position {
+  position: relative;
+  left: 11%;
+  top: -54px;
+}

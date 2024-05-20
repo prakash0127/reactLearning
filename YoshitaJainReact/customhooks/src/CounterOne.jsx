@@ -10,9 +10,8 @@ function CounterOne() {
   return (
     <>
       <div>
-        <h2>
-          In CounterOne Componet, Our Count value is {count} and stating is 10{" "}
-        </h2>
+        <h2>In CounterOne Component,</h2>
+        <p>Our Count value is {count} and stating is 10</p>{" "}
       </div>
       {/* need the button as well so  amd onclick calling our increment function */}
       <div>

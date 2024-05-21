@@ -36,11 +36,37 @@ function AxiosPost() {
     // here we are setting after submit button click cleaning the fname and lname from the input
     setInputData({ ...inputData, fname: "", lname: "" });
   }
+
+  // update functionality
+
+  function handleUpdate(e) {
+    e.preventDefault();
+    // we are updating so we need to use put method to do that
+    // and we change our api to /user/1 as per the jsonplaceholder for put method you can see in routes on the websites
+    // and again the second parament is for for taking the data for update here
+    // and in console we can see that we have updated in the data
+    axios
+      .put("https://jsonplaceholder.typicode.com/users/1", inputData)
+      .then((response) => {
+        console.log(response);
+      });
+  }
+
+  function handleDelete(e) {
+    e.preventDefault();
+    // same procees but we are deleteing so used delete key and same axios with delete method
+    // and here we dont need second paramenter because we are not submitting anything things to db
+    axios
+      .delete("https://jsonplaceholder.typicode.com/users/1")
+      .then((response) => {
+        console.log(response);
+      });
+  }
   return (
     <>
       <h3>Axios Post</h3>
       <div>
-        <label> First Name</label>
+        <label> First Name :</label>
         {/* added a name firstname andvalue to set to data.fname and onChange event listener */}
         <input
           type="text"
@@ -49,7 +75,7 @@ function AxiosPost() {
           onChange={handleData}
         />{" "}
         <br></br>
-        <label> Last Name</label>
+        <label> Last Name :</label>
         <input
           type="text"
           name="lname"
@@ -61,6 +87,12 @@ function AxiosPost() {
          handle the submit 
         */}
         <button onClick={handleSubmit}>Submit</button>
+        {/* adding a update button to update the data  */}
+        <button onClick={handleUpdate}>Update</button>
+        {/* button we have added for delete  
+        it will delete all the data from the api 
+        */}
+        <button onClick={handleDelete}>Delete</button>
       </div>
     </>
   );

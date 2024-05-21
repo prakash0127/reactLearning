@@ -1,6 +1,8 @@
 import { useState } from "react";
-import AxiosExample from "./AxiosExample";
+
 import "./App.css";
+import AxiosPost from "./AxiosPost";
+import AxiosGet from "./AxiosGet";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,7 +12,8 @@ function App() {
       <div>
         <h2>Axios-Project</h2>
       </div>
-      <AxiosExample />
+      <AxiosGet />
+      <AxiosPost />
     </>
   );
 }

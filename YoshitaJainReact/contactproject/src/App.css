@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+.header {
+  font-weight: 500;
+  font-size: larger;
+  border: 2px solid;
+  background-color: #8e0625;
+  color: white;
+  text-align: center;
+}
+.add-conatct {
+  text-align: left;
+}
+
+.add-conatct-heading {
+  font-size: 18px;
+  margin-top: 12px;
+  font-weight: bold;
+}
+input {
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+  min-width: 200px;
+  margin: 10px 0px;
+}
+label {
+  margin-top: 20px;
+}
+button {
+  margin-top: 10px;
+}
+.contact-list {
+  align-items: left;
+  text-align: left;
+}
+.contactsheader {
+  font-size: medium;
+  font-weight: 500;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+  margin-bottom: 2px;
+  margin-left: 12px;
+  margin-right: 5px;
+}

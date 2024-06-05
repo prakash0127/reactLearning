@@ -1,8 +1,14 @@
 // components/Header.js
 
 import React from "react";
+import { useState } from "react";
 
-function Header() {
+function Header({ onToggleBackground }) {
+  const [isWhiteBackground, setIsWhiteBackground] = useState(true);
+
+  const handleBackgroundToggle = () => {
+    setIsWhiteBackground(!isWhiteBackground);
+  };
   return (
     <header>
       <h1>Prakash Gupta</h1>
@@ -19,6 +25,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <button onClick={onToggleBackground}>Toggle Background</button>
       <div className="summary">
         <h2>Summary </h2>
         <p>

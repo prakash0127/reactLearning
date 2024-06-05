@@ -68,4 +68,20 @@ section h2 {
 .summary {
   background-color: #83837a;
   padding: 0 12px 0 3px;
+  border-radius: 4px;
 }
+
+/* Button.css */
+/* App.css */
+
+.white-background {
+  background-color: #fff;
+  color: #000;
+}
+
+.black-background {
+  background-color: #000;
+  color: #fff;
+}
+
+/*

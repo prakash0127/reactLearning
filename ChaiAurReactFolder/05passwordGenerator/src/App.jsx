@@ -2,13 +2,18 @@ import { useCallback, useState, useEffect, useRef } from "react";
 import "./App.css";
 
 function App() {
-  const [length, setlength] = useState(8); // this is created for length as we need to increase and decrease and defalit length is 8
+  const [length, setlength] = useState(8);
+  // this is created for length as we need to increase and decrease and defalit length is 8
 
-  const [numberAllowed, setNumberAllowed] = useState(false); // for Number we need to enable or disable we have taken a State and want to on or off so make default false i.e disable
+  const [numberAllowed, setNumberAllowed] = useState(false);
+  // for Number we need to enable or disable we have taken a State and want to on or off so make default false i.e disable
 
-  const [charAllowed, setCharAllowed] = useState(false); // same for Character we need to enable or disable we have taken a State and want to on or off so make default false i.e disable
+  const [charAllowed, setCharAllowed] = useState(false);
+  // same for Character we need to enable or disable we have taken a State and want to on or off so make default false i.e disable
 
-  const [password, setPassword] = useState(""); // creating a password to store the password from input field and default value we can give a random password but we will be gererating Random password and store it for now we keep it
+  const [password, setPassword] = useState("");
+  // creating a password to store the password from input field and default value we can give a random password
+  // but we will be gererating Random password and store it for now we keep it
   // and for every load of your page it will generate a random pass word and it is another mechanism
 
   // creating a password generator function
@@ -17,20 +22,23 @@ function App() {
   // it means we can keep in memoory, syntax : usecallback(fn, dependencies)
   // dependecies is just loike which varibale call you want to run the function and you can pass in array
 
-  //creating useRef
-
-  const passwordRef = useRef(null); // created a reference and now we are not refering any reference so keeping it null
-  // in input we will use it for the reference it
+  //creating useRef so we get the current value from it can say current parameter
+  const passwordRef = useRef(null);
+  // created a reference and now  we are not refering any
+  // reference so keeping it null in input we will use it for the reference it
 
   const passwordGenerator = useCallback(() => {
     // use callback because of memoization the value
     let pass = ""; // created a blank password for now
 
-    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; // created a str, to pull/take out from it, use to create a a password
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    // created a str, to pull/take out from it, use to create a a password
 
     if (numberAllowed) str += "0123456789";
     // added a condition i.e if number is allowed so take or not dont take it
-    if (charAllowed) str += "!@#$%^&*-_+=[]{}~`"; // added a condition i.e if character is allowed so take or not dont take it
+
+    if (charAllowed) str += "!@#$%^&*-_+=[]{}~`";
+    // added a condition i.e if character is allowed so take or not dont take it
 
     // now we are creating a loop to pick the string and make a password from it, and length is depended on the length proper that we have defined above
     for (let i = 1; i <= length; i++) {

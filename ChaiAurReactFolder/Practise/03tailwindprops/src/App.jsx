@@ -9,6 +9,7 @@ function App() {
       </h1>
       <Card name="Chai" btnText="click me" />
       <Card name="Code" btnText="info" />
+      {/*  we can make a default value as well  */}
     </>
   );
 }

@@ -117,6 +117,14 @@ const parent = React.createElement(
   { id: "parent" },
 
   [
+    React.createElement("div", { id: "parent2" }, [
+      React.createElement(
+        "h1",
+        { id: "parent1-h1" },
+        "Hello world parent-1 child"
+      ),
+    ]),
+
     React.createElement("div", { id: "child1" }, [
       React.createElement("h1", {}, "h1 child-1 tag "),
       React.createElement("h2", {}, "h2 child-1 tag "),
@@ -136,7 +144,7 @@ root.render(parent);
 
 //part-05
 
-// in our index.htmk file the order we have added our file i.e react and reactDOM js file
+// in our index.html file the order we have added our file i.e react and reactDOM js file
 // it will matter if we write opposite
 // and our external js file write above the react one
 

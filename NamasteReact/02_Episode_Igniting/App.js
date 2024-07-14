@@ -208,3 +208,5 @@ root.render(parent);
 // in package.json it has added in the devDependecies
 
 // parcel:"^2.8.3"  here ^ this is a carret
+// we can also put tiday as well i.e ~ but better to keep caret because it update the minor version of react not the major version
+// tilday will update the mojor version auto matically and that will create an issue in our app due to major update
